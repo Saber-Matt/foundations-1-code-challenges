@@ -7,7 +7,7 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    return arr. (item => items.name);
 }
 
 /*
@@ -17,7 +17,7 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    return arr.reverse(name);
 }
 
 /*
