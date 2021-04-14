@@ -7,7 +7,11 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return arr. (item => items.name);
+    const newAr = []
+    arr.forEach(item => newAr.push(item.type))
+        (item => items.name);
+    return newAr.reverse();
+
 }
 
 /*

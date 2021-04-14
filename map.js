@@ -19,7 +19,7 @@ Output:
 */
 
 export function makeArrayOfNamesWithMap(arr) {
-    return [];
+    return arr.map(names => names.name);
 }
 
 /*
@@ -58,7 +58,7 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    return arr.toString(name, type)
 }
 
 /*
