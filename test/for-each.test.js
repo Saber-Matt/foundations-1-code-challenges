@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { 
+import {
     makeArrayOfNames,
     makeReversedArrayOfTypes,
     makeSpanishLanguageArray,
@@ -22,7 +22,7 @@ test('should make an array of names', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = ['coco', 'jumper'];
-    
+
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeArrayOfNames(pets);
@@ -32,11 +32,11 @@ test('should make an array of names', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a reverse array of type', (expect) => {
+test('should make a reverse array of type', (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = ['frog', 'cat'];
-    
+
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = makeReversedArrayOfTypes(pets);
@@ -46,26 +46,27 @@ skip('should make a reverse array of type', (expect) => {
     expect.deepEqual(actual, expected);
 });
 
-skip('should make a spanish array of pet objects', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
-    const expected = [
-        {
-            nombre: 'coco',
-            tipo: 'cat',
-        },
-        {
-            nombre: 'jumper',
-            tipo: 'frog',
-        }
-    ];
-    
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = makeSpanishLanguageArray(pets);
+test
+    ('should make a spanish array of pet objects', (expect) => {
+        //Arrange
+        // Set up your arguments and expectations
+        const expected = [
+            {
+                nombre: 'coco',
+                tipo: 'cat',
+            },
+            {
+                nombre: 'jumper',
+                tipo: 'frog',
+            }
+        ];
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
-    expect.deepEqual(actual, expected);
-});
+        //Act 
+        // Call the function you're testing and set the result to a const
+        const actual = makeSpanishLanguageArray(pets);
+
+        //Expect
+        // Make assertions about what is expected versus the actual result
+        expect.deepEqual(actual, expected);
+    });
 
