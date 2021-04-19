@@ -33,7 +33,11 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-    return [];
+    return arr.map(pet => {
+        return {
+            ...pet, isHungry: true
+        }
+    })
 }
 
 /*
@@ -47,7 +51,7 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    return arr.map(pet => ({ name: pet.name.toUpperCase(), type: pet.type }));
 }
 
 
@@ -58,7 +62,7 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return arr.toString(name, type)
+    return arr.toString(type)
 }
 
 /*
